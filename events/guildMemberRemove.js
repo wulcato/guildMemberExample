@@ -6,5 +6,5 @@ module.exports = async (client, member) => {
   const message2 = `**${member.user.tag}** , good bye. `
   const channel = member.guild.channels.cache.get(channelid)
   channel.send(message2)
-
+  console.log(`Left : ${member.tag}(${member.id})`);
 };

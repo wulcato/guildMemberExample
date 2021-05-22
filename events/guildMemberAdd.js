@@ -11,6 +11,8 @@ module.exports = async (client, member) => {
 
   const channel = member.guild.channels.cache.get(channelid)
   channel.send(message2)
+
+  console.log(`Joined : ${member.tag}(${member.id})`);
 };
 
 
